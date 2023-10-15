@@ -519,15 +519,10 @@ function love.draw()
             love.graphics.setColor(tanks[kill_nums[i].color].color.r / 255, tanks[kill_nums[i].color].color.g / 255, tanks[kill_nums[i].color].color.b / 255)
             love.graphics.print(kill_nums[i].color, 300, 100 * (5 - i) + 250)
             love.graphics.setColor(1, 1, 1)
-<<<<<<< HEAD
             s = kill_nums[i].hits == 1 and '' or 'S'
             k = kill_nums[i].kills == 1 and '' or 'S'
             love.graphics.print(tostring(kill_nums[i].hits) ..' HIT' .. s, 600, 100 * (5 - i) + 250)
             love.graphics.print(tostring(kill_nums[i].kills) ..' KILL' .. k, 850, 100 * (5 - i) + 250)
-=======
-            love.graphics.print(tostring(kill_nums[i].hits) ..' HITS', 600, 100 * (5 - i) + 250)
-            love.graphics.print(tostring(kill_nums[i].kills) ..' KILLS', 850, 100 * (5 - i) + 250)
->>>>>>> 37dc069abde0dd65095c78a92888b41d5eabb7b4
 
             bltIMG = love.graphics.newQuad(tanks[kill_nums[i].color].big.bx, tanks[kill_nums[i].color].big.by, tanks.size.big.bw, tanks.size.big.bh, atlas:getDimensions())
             for p = 1, kill_nums[i].kills do
